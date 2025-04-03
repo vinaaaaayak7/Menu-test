@@ -1,23 +1,13 @@
-<!DOCTYPE html><html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        .menu { max-width: 400px; margin: auto; background: #f8f8f8; padding: 20px; border-radius: 10px; }
-        h2 { color: #d35400; }
-        .item { display: flex; justify-content: space-between; padding: 8px 0; }
-    </style>
-</head>
-<body>
-    <div class="menu">
-        <h2>📜 Restaurant Menu</h2>
-        <div class="item"><span>🍕 Margherita Pizza</span> <span>₹250</span></div>
-        <div class="item"><span>🍔 Cheeseburger</span> <span>₹180</span></div>
-        <div class="item"><span>🍝 Pasta Alfredo</span> <span>₹220</span></div>
-        <div class="item"><span>🥗 Caesar Salad</span> <span>₹150</span></div>
-        <div class="item"><span>🥤 Cold Drink</span> <span>₹50</span></div>
-    </div>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-text value="🍕 Menu 🍔\nMargherita Pizza - ₹250\nCheeseburger - ₹180\nPasta Alfredo - ₹220\n🥤 Cold Drink - ₹50"
+              position="0 1 -3" scale="2 2 2" color="white"></a-text>
+    </a-scene>
+  </body>
 </html>
